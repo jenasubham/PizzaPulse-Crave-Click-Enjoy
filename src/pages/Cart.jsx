@@ -51,7 +51,6 @@ function Cart() {
     _cart.totalItems -= 1;
     setCart(_cart)
     } 
-
   }
 
   function getSum(itemId, price){
@@ -90,6 +89,7 @@ return (
 
       <ul>
         {
+          
         items.map((item) => {
           return (
             <li className="mb-2" key={item._id}>

@@ -1,10 +1,8 @@
 import Item from "./Item";
 import { useState , useEffect} from "react";
-// import { CartContext } from "../CartContext";
 
 
 function Items() {
-  // const {name} = useContext(CartContext)
 
 const [items, setitems] = useState([]);
 

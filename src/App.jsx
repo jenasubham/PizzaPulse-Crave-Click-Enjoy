@@ -11,13 +11,14 @@ function App() {
 const [cart, setCart] = useState({})
 
 useEffect(()=>{
-  
   const cart = localStorage.getItem('cart'); 
   setCart(JSON.parse(cart));
+
 },[])
   
 useEffect(()=>{
   localStorage.setItem('cart', JSON.stringify(cart));
+  
 },[cart])
 
 return (
